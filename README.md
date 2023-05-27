@@ -1,2 +1,2 @@
-# backend
-백엔드
+# 졸업프로젝트 Gachi
+Gachi Backend
