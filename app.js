@@ -10,6 +10,8 @@ var users = require('./routes/users');
 
 var app = express();
 
+var db = require('./db');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -43,6 +45,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.get('/login',function(req,res){
+	// 아이디 로그인 받기 	
+})
 app.listen(process.env.PORT || 3000, () => console.log('Example app listening on port 3000!'));
 
 module.exports = app;
